@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  padding: 1em;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.center-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.intro {
+  text-align: center;
+  margin: 3em 1em 1em;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.subtitle {
+  font-size: 0.9em;
+}
+
+.full-width-line {
+  height: 1px;
+  margin: 2em 0;
+  width: 100%;
+}
+
+.button-options {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  margin: 2em auto;
+  flex-wrap: wrap;
+}
+
+.phone-section {
+  display: none;
+  padding: 2em 1em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#iphone-tab:checked ~ #phone-info .iphone-content,
+#samsung-tab:checked ~ #phone-info .samsung-content,
+#google-tab:checked ~ #phone-info .google-content {
+  display: block;
+}
+
+.phone-model {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-image, .phone-description {
+  flex: 1;
+  min-width: 300px;
+}
+
+.phone-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+.specs-table th, .specs-table td {
+  border: 1px solid var(--border-color);
+  padding: 0.5em;
+  text-align: left;
+}
+
+.specs-table th {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.features-list {
+  padding-left: 1.5em;
+  list-style-type: square;
+  color: var(--accent-color);
+}
+
+.features-list li {
+  margin-bottom: 0.5em;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5em;
+}
+
+@media (max-width: 768px) {
+  .button-options {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .phone-model {
+    flex-direction: column;
+  }
+  
+  .phone-image, 
+  .phone-description {
+    min-width: 100%;
+  }
+}
