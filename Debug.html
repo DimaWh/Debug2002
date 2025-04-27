@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="DebugReasons.css">
   <link rel="stylesheet" href="DebugYoutube.css">
   <link rel="stylesheet" href="DebugIntrebari.css">
+  <link rel="stylesheet" href="DebugCatalog.css">
 </head>
 <body>
   <header class="sticky-header">
@@ -43,14 +44,12 @@
           <div class="phone-description">
             <h3>iPhone 16</h3>
             <p>iPhone 16 reprezintă vârful tehnologiei Apple, combinând performanță extremă cu un design rafinat.</p>
-            
             <table class="specs-table">
               <tr><th>Specificație</th><th>Detalii</th></tr>
               <tr><td>RAM</td><td>8GB</td></tr>
               <tr><td>Stocare</td><td>128GB - 1TB</td></tr>
               <tr><td>Ecran</td><td>6.7" Super Retina XDR</td></tr>
             </table>
-
             <ul class="features-list">
               <li>Camera 48MP cu stabilizare computațională</li>
               <li>Cip A17 Pro</li>
@@ -71,14 +70,12 @@
           <div class="phone-description">
             <h3>Samsung Galaxy S24 Ultra</h3>
             <p>Samsung Galaxy S24 Ultra redefinește standardele Android-ului premium.</p>
-            
             <table class="specs-table">
               <tr><th>Specificație</th><th>Detalii</th></tr>
               <tr><td>RAM</td><td>12GB</td></tr>
               <tr><td>Stocare</td><td>256GB - 1TB</td></tr>
               <tr><td>Ecran</td><td>6.8" Dynamic AMOLED</td></tr>
             </table>
-
             <ul class="features-list">
               <li>Camera 200MP cu zoom optic 10x</li>
               <li>Procesor Snapdragon 8 Gen 3</li>
@@ -99,14 +96,12 @@
           <div class="phone-description">
             <h3>Google Pixel 8 Pro</h3>
             <p>Google Pixel 8 Pro aduce puterea inteligenței artificiale direct în palma ta.</p>
-            
             <table class="specs-table">
               <tr><th>Specificație</th><th>Detalii</th></tr>
               <tr><td>RAM</td><td>12GB</td></tr>
               <tr><td>Stocare</td><td>128GB - 512GB</td></tr>
               <tr><td>Ecran</td><td>6.7" LTPO OLED</td></tr>
             </table>
-
             <ul class="features-list">
               <li>Cip Google Tensor G3</li>
               <li>Camera 50MP cu zoom optic 5x</li>
@@ -143,14 +138,7 @@
     <section class="video-container">
       <div class="video-wrapper">
         <h2>Recenziile noastre</h2>
-        <iframe 
-          width="560" 
-          height="315" 
-          src="https://www.youtube.com/embed/6jVUSsByq9Y" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-        </iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6jVUSsByq9Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="video-description">
         <h3>Ce spun expertii?</h3>
@@ -175,10 +163,152 @@
         <button type="submit" class="phone-btn">Trimite</button>
       </form>
     </section>
+
+    <div class="full-width-line"></div>
+
+    <section class="catalog-section">
+      <div class="phone-catalog">
+        <h3>Catalog Telefoane</h3>
+        <div class="phone-item active" data-phone="iphone15">
+          <img src="https://darwin.md/media/563540/conversions/darwin-apple-iphone-15-128-gb-black-314388-preview-webp.png" alt="iPhone 15">
+          <span>iPhone 15</span>
+        </div>
+        <div class="phone-item" data-phone="iphone14">
+          <img src="https://iplanet.one/cdn/shop/files/iPhone_14_Blue_PDP_Image_Position-1A__WWEN.jpg?v=1691142210&width=1920" alt="iPhone 14">
+          <span>iPhone 14</span>
+        </div>
+        <div class="phone-item" data-phone="iphone13">
+          <img src="https://m.media-amazon.com/images/I/71MKNCEgE6L.jpg" alt="iPhone 13">
+          <span>iPhone 13</span>
+        </div>
+        <div class="phone-item" data-phone="samsung24">
+          <img src="https://image-us.samsung.com/us/smartphones/galaxy-s24/all-gallery/01_E1_OnlineExclusive_SapphireBlue_Lockup_1600x1200.jpg?$default-400-jpg$" alt="Samsung S24">
+          <span>Samsung Galaxy S24</span>
+        </div>
+        <div class="phone-item" data-phone="samsungA55">
+          <img src="https://img.global.news.samsung.com/uk/wp-content/uploads/2024/03/Galaxy-A55-5G-and-A35-5G_main2.jpg" alt="Samsung A55">
+          <span>Samsung Galaxy A55</span>
+        </div>
+        <div class="phone-item" data-phone="pixel8">
+          <img src="https://lh3.googleusercontent.com/KaLIFYVg9298b8jv33H3pagRaAz4lCQxrQz-goMEsiTuCmUf2Ood9ktkzgjpotkMuRcAMimOV2RfN7vBZVmnInf5wcwUNsRZpw" alt="Google Pixel 8">
+          <span>Google Pixel 8</span>
+        </div>
+      </div>
+
+      <div class="phone-details active" id="iphone15-details">
+        <h3>iPhone 15</h3>
+        <div class="phone-details-specs">
+          <p>Cel mai nou iPhone cu Dynamic Island și design premium.</p>
+          <ul class="features-list">
+            <li>Procesor: A16 Bionic (4nm)</li>
+            <li>RAM: 6GB LPDDR5</li>
+            <li>Stocare: 128GB/256GB NVMe</li>
+            <li>Ecran: 6.1" Super Retina XDR</li>
+            <li>Camere: 48MP + 12MP</li>
+            <li>Baterie: 3349 mAh</li>
+            <li>Rezistență: IP68</li>
+            <li>Sistem: iOS 17</li>
+          </ul>
+          <a href="https://darwin.md/apple-iphone-15-128-gb-single-sim-5g-black.html" class="buy-btn" target="_blank">Cumpără acum</a>
+        </div>
+      </div>
+
+      <div class="phone-details" id="iphone14-details">
+        <h3>iPhone 14</h3>
+        <div class="phone-details-specs">
+          <p>Modelul anterior de top de la Apple, cu performanțe excelente.</p>
+          <ul class="features-list">
+            <li>Procesor: A15 Bionic (5nm)</li>
+            <li>RAM: 6GB LPDDR4X</li>
+            <li>Stocare: 128GB/256GB/512GB</li>
+            <li>Ecran: 6.1" Super Retina XDR</li>
+            <li>Camere: 12MP dual</li>
+            <li>Baterie: 3279 mAh</li>
+            <li>Rezistență: IP68</li>
+            <li>Sistem: iOS 16</li>
+          </ul>
+          <a href="https://darwin.md/apple-iphone-14-6-gb-256-gb-single-sim-5g-midnight.html" class="buy-btn" target="_blank">Cumpără acum</a>
+        </div>
+      </div>
+
+      <div class="phone-details" id="iphone13-details">
+        <h3>iPhone 13</h3>
+        <div class="phone-details-specs">
+          <p>Modelul accesibil din gama Apple cu performanțe solide.</p>
+          <ul class="features-list">
+            <li>Procesor: A15 Bionic (5nm)</li>
+            <li>RAM: 4GB LPDDR4X</li>
+            <li>Stocare: 128GB/256GB/512GB</li>
+            <li>Ecran: 6.1" Super Retina XDR</li>
+            <li>Camere: 12MP dual</li>
+            <li>Baterie: 3227 mAh</li>
+            <li>Rezistență: IP68</li>
+            <li>Sistem: iOS 15</li>
+          </ul>
+          <a href="https://darwin.md/apple-iphone-13-4-gb-128-gb-midnight.html" class="buy-btn" target="_blank">Cumpără acum</a>
+        </div>
+      </div>
+
+      <div class="phone-details" id="samsung24-details">
+        <h3>Samsung Galaxy S24</h3>
+        <div class="phone-details-specs">
+          <p>Ultimul model flagship de la Samsung cu performanțe extreme.</p>
+          <ul class="features-list">
+            <li>Procesor: Exynos 2400</li>
+            <li>RAM: 8GB LPDDR5X</li>
+            <li>Stocare: 128GB/256GB</li>
+            <li>Ecran: 6.2" Dynamic AMOLED</li>
+            <li>Camere: 50MP + 12MP + 10MP</li>
+            <li>Baterie: 4000 mAh</li>
+            <li>Rezistență: IP68</li>
+            <li>Sistem: Android 14</li>
+          </ul>
+          <a href="https://darwin.md/smartphone-samsung-galaxy-s24-fe-s721-8-gb-256-gb-dual-sim-5g-blue.html" class="buy-btn" target="_blank">Cumpără acum</a>
+        </div>
+      </div>
+
+      <div class="phone-details" id="samsungA55-details">
+        <h3>Samsung Galaxy A55</h3>
+        <div class="phone-details-specs">
+          <p>Smartphone mid-range cu raport calitate-preț excelent.</p>
+          <ul class="features-list">
+            <li>Procesor: Exynos 1480</li>
+            <li>RAM: 8GB LPDDR5</li>
+            <li>Stocare: 128GB/256GB</li>
+            <li>Ecran: 6.6" Super AMOLED</li>
+            <li>Camere: 50MP + 12MP + 5MP</li>
+            <li>Baterie: 5000 mAh</li>
+            <li>Rezistență: IP67</li>
+            <li>Sistem: Android 14</li>
+          </ul>
+          <a href="https://darwin.md/samsung-galaxy-a55-a556-8-gb-128-gb-dual-sim-5g-awesome-ice-blue.html" class="buy-btn" target="_blank">Cumpără acum</a>
+        </div>
+      </div>
+
+      <div class="phone-details" id="pixel8-details">
+        <h3>Google Pixel 8</h3>
+        <div class="phone-details-specs">
+          <p>Experiență Android pură cu camere excepționale.</p>
+          <ul class="features-list">
+            <li>Procesor: Tensor G3</li>
+            <li>RAM: 8GB LPDDR5</li>
+            <li>Stocare: 128GB/256GB</li>
+            <li>Ecran: 6.2" OLED</li>
+            <li>Camere: 50MP + 12MP</li>
+            <li>Baterie: 4575 mAh</li>
+            <li>Rezistență: IP68</li>
+            <li>Sistem: Android 14</li>
+          </ul>
+          <a href="https://darwin.md/google-pixel-8-pro-8-gb-128-gb-single-sim-5gobsidian-black.html" class="buy-btn" target="_blank">Cumpără acum</a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
     <p>Honest Smartphones.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
